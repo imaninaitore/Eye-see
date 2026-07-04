@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/components/ui/button';
+import { Button } from '@/assets/components/ui/button';
 
 function Navbar() {
   return (
