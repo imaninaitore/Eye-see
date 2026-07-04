@@ -1,33 +1,33 @@
 [
     {
         "id": 1,
-        "name": "blue glasses",
+        "name": "blue-light rimless",
         "price": 2250,
-        "category": "rim-less",
+        "category": "rimless",
         "description": "rimless blue tint glasses",
         "image": "/images/glass 1.jpg" 
     },
     {
         "id": 2,
-        "name": "Wireless Noise-Canceling Headphones",
+        "name": "pink tint 300",
         "price": 199.99,
-        "category": "Electronics",
+        "category": "sunglasses",
         "description": "Experience pure sound with 30-hour battery life.",
         "image": "/images/glass 2.jpg" 
     },
     {
         "id": 3,
-        "name": "Organic Cotton T-Shirt",
+        "name": "Oval red sunglasses",
         "price": 25.0,
-        "category": "Clothing",
+        "category": "sunglasses",
         "description": "Soft, breathable, and sustainably sourced.",
         "image": "/images/glass 3.jpg" 
     },
     {
         "id": 4,
-        "name": "Mechanical Gaming Keyboard",
+        "name": "black tint sunglasses",
         "price": 120.0,
-        "category": "Electronics",
+        "category": "rimless",
         "description": "RGB backlit keys with tactile switches.",
         "image": "/images/glass 4.jpg" 
     }
