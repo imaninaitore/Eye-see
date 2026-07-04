@@ -10,6 +10,7 @@ const [searchTerm, setSearchTerm]= useState ('')
 
 const handleSearch =(searchInputValue) =>{
 setSearchTerm(searchInputValue)
+}
 
   useEffect(() => {
     fetch("/products.json")
@@ -28,7 +29,10 @@ setSearchTerm(searchInputValue)
 
     return (
      <div>
-     {products.map((product) => (
+         <h2>Product List</h2>
+<ProductsSearch onSearch = {handleSearch}/>
+    <p>showing results for: <strong>{searchTerm || "All items"}</strong></p>
+     {filteredProducts.map((product) => (
         <ProductCard
           key={product.id}
           id={product.id}
@@ -43,4 +47,4 @@ setSearchTerm(searchInputValue)
   )
 }
 
-export default ProductList
+export default ProductList;
