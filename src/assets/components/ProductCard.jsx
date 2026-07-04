@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card,CardContent,CardTitle,CardHeader } from './ui/card'
+import { Button } from '@base-ui/react'
 
 function ProductCard({id, name, price, category, description, image }) {
   return (
