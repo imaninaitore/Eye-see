@@ -10,11 +10,9 @@ function ProductList() {
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
-        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching products:", error);
-        setLoading(false);
       });
   }, []);
 
