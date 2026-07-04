@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "blue glasses",
+        "price": 2250,
+        "category": "rim-less",
+        "description": "rimless blue tint glasses",
+        "image": "/images/glass 1.jpg" 
+    },
+    {
+        "id": 2,
+        "name": "Wireless Noise-Canceling Headphones",
+        "price": 199.99,
+        "category": "Electronics",
+        "description": "Experience pure sound with 30-hour battery life.",
+        "image": "/images/glass 2.jpg" 
+    },
+    {
+        "id": 3,
+        "name": "Organic Cotton T-Shirt",
+        "price": 25.0,
+        "category": "Clothing",
+        "description": "Soft, breathable, and sustainably sourced.",
+        "image": "/images/glass 3.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "Mechanical Gaming Keyboard",
+        "price": 120.0,
+        "category": "Electronics",
+        "description": "RGB backlit keys with tactile switches.",
+        "image": "/images/glass 4.jpg" 
+    }
+]
