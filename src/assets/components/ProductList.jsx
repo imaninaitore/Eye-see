@@ -6,6 +6,11 @@ import ProductsSearch from './ProductsSearch';
 function ProductList() {
   const [products, setProducts] = useState([]);
   
+const [searchTerm, setSearchTerm]= useState ('')
+
+const handleSearch =(searchInputValue) =>{
+setSearchTerm(searchInputValue)
+
   useEffect(() => {
     fetch("/products.json")
       .then((response) => response.json())
@@ -17,6 +22,7 @@ function ProductList() {
       });
   }, []);
 
+  
     return (
      <div>
      {products.map((product) => (
