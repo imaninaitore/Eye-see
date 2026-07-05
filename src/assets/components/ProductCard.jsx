@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card,CardContent,CardTitle,CardHeader } from './ui/card'
 import { Button } from '@/assets/components/ui/button'
+import { CartContext } from '@/context/CartContext';
+import { useContext } from 'react';
 
 function ProductCard({id, name, price, category, description, image }) {
   
