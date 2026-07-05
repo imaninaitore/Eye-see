@@ -1,7 +1,5 @@
 import React, { useContext } from 'react'
 import { Button } from '@/assets/components/ui/button';
-import { CartContext } from '@/context/CartContext';
-import Cart from './Cart';
 
 function Navbar() {
   return (
