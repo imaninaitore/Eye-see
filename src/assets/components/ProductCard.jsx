@@ -3,6 +3,7 @@ import { Card,CardContent,CardTitle,CardHeader } from './ui/card'
 import { Button } from '@/assets/components/ui/button'
 import { CartContext } from '@/context/CartContext';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 function ProductCard({id, name, price, category, description, image }) {
   
@@ -22,7 +23,9 @@ const handleAddToCart = () =>{
       </CardHeader >
       <CardContent>
 
-      <img src={image} alt={name} width="200" />    
+   <Link to={`/product/${id}`}>
+     <img src={image} alt={name} width="200" />    
+   </Link>
 
       <p>Price: Ksh. {price}</p>
       <p>{description}</p>
