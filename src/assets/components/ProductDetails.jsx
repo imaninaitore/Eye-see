@@ -1,6 +1,38 @@
 import React from 'react'
 
 function ProductDetails() {
+
+  const { productId } = useParams();
+  const {id} = useParams();
+  const [product, setProduct] = useState(null);
+  const { cart, setCart } = useContext(CartContext);
+
+  useEffect(() => {
+    fetch('/products/products.json')
+      .then(res => res.json())
+      .then(data => {
+        const found = data.find(p => String(p.id) === String(productId));
+        setProduct(found);
+      });
+  }, [productId]);
+
+  const handleAddToCart = () => {
+    if (!product) return;
+    
+    const productPayload = {
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      quantity: 1 
+    };
+
+    setCart([...cart, productPayload]);
+  };
+
+  if (!product) return <p className="p-8 text-center text-muted-foreground animate-pulse">Finding product specifics...</p>;
+
+  
   return (
     <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 space-y-4">
 
