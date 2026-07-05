@@ -1,3 +1,5 @@
+# Eye-See e-commerce
+This project is a React E-Commerce Store where users can browse products, view product details, search items add products to a cart.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
