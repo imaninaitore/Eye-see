@@ -5,7 +5,7 @@ import ProductsSearch from './ProductsSearch';
 import { Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger } from '@/assets/components/ui/dialog';
 import { CartContext } from '@/context/CartContext';
 import Cart from './Cart';
-
+import { Button } from '@base-ui/react';
 
 function ProductList() {
 const [products, setProducts] = useState([]);
@@ -42,7 +42,7 @@ const cartItemCount = cart?.length || 0;
 {/* Cart Modal System (Using Dialog) */}
   <Dialog open={isOpen} onOpenChange={setIsOpen}>
   <DialogTrigger asChild>
-    <button className="relative">
+    <Button className="relative">
       Open Cart
 
       {cartItemCount > 0 && (
@@ -50,7 +50,7 @@ const cartItemCount = cart?.length || 0;
           {cartItemCount}
         </span>
       )}
-    </button>
+    </Button>
   </DialogTrigger>
 
   <DialogContent className="sm:max-w-md max-h-[85vh] flex flex-col p-6 overflow-hidden">
@@ -74,15 +74,18 @@ const cartItemCount = cart?.length || 0;
   </DialogContent>
 </Dialog>
 
- <div>
+ <div >
       <h2>Product List</h2>
-<ProductsSearch onSearch = {handleSearch}/>
+ <ProductsSearch onSearch = {handleSearch}/>
     <p>showing results for: <strong>{searchTerm || "All items"}</strong></p>
-      {filteredProducts.length === 0 ? (
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       {filteredProducts.length === 0 ? (
         <p>No products match your search </p>
       ):(
         filteredProducts.map((product) => (
-        <ProductCard
+
+         <ProductCard
           key={product.id}
           id={product.id}
           name={product.name}
@@ -90,9 +93,13 @@ const cartItemCount = cart?.length || 0;
           category={product.category}
           description={product.description}
           image={product.image}
-        />
-      ))
-      )}
+            />
+        
+        ))
+        )}
+        </div>
+        
+      
     </div>
     </>
  );
