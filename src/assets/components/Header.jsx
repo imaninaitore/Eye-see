@@ -2,6 +2,7 @@ import React from 'react'
 import background from "@/assets/bg.jpg"
 
 function Header() {
+
   return (
     <header style={{
         backgroundImage:`url(${background})`,

@@ -4,10 +4,6 @@ import { CartContext } from '@/context/CartContext';
 import Cart from './Cart';
 
 function Navbar() {
-
-const {cart} = useContext(CartContext);
-
-const cartItemCount = cart?.length || 0;
   return (
 <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 flex justify-between items-center p-4 text-foreground">
       {/* Clickable Brand Title navigating back home */}

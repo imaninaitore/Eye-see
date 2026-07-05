@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 import ProductsSearch from './ProductsSearch';
 
 function ProductList() {
-  const [products, setProducts] = useState([]);
+const [products, setProducts] = useState([]);
   
 const [searchTerm, setSearchTerm]= useState ('')
 
@@ -27,6 +27,11 @@ setSearchTerm(searchInputValue)
   product.name.toLowerCase().includes(searchTerm.toLowerCase())
 )
 
+//cart variables
+const {cart} = useContext(CartContext);
+  const cartItemCount = cart?.length || 0;
+  const [isOpen, setIsOpen] = useState(false);
+  
     return (
      <div>
          <h2>Product List</h2>
