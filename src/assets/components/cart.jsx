@@ -1,8 +1,11 @@
 import React, { createContext, useContext } from 'react'
+import { Button } from '@base-ui/react';
+import { Card,CardContent,CardHeader,CardTitle,CardFooter } from './ui/card';
+import { CartContext } from '@/context/CartContext';
+
 
 function Cart({onCheckout}) {
-    const {cart , setcart} = useContext(cartContext)
-    const navigate = useNavigate();
+    const {cart , setCart} = useContext(CartContext)
 
     const totalPrice = cart.reduce(
         (sum,item) => sum + (item.price * (item.quantity || 1)), 0);
