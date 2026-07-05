@@ -3,6 +3,14 @@ import { Card,CardContent,CardTitle,CardHeader } from './ui/card'
 import { Button } from '@/assets/components/ui/button'
 
 function ProductCard({id, name, price, category, description, image }) {
+  
+   const{cart,setCart} = useContext(CartContext);
+
+const handleAddToCart = () =>{
+  const productPayload = {id,name,price}
+  setCart([...cart,productPayload]);
+}
+
   return (
     <Card>
       <CardHeader>
@@ -17,7 +25,7 @@ function ProductCard({id, name, price, category, description, image }) {
       <p>Price: Ksh. {price}</p>
       <p>{description}</p>
       <p>Category: {category}</p>
-      <Button variant='default' size="xs">Add to cart</Button>
+      <Button onClick={handleAddToCart} variant='default' size="xs">Add to cart</Button>
       </CardContent>
      </Card>
   )

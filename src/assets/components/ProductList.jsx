@@ -95,6 +95,6 @@ const cartItemCount = cart?.length || 0;
       )}
     </div>
     </>
- )
+ );
 }
 export default ProductList;
