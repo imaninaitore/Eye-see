@@ -11,7 +11,7 @@ function Header() {
         height: "500px",
         }}>
 
-        <h1 className="text-black text-3xl sm:text-2xl md:text-5xl lg:text-6xl  py-6 px-6">Welcome to Eye see shop!</h1>
+        <h1 className="flex text-center text-slate-200 text-3xl sm:text-2xl md:text-5xl lg:text-6xl  py-6 px-6">Welcome to Eye see shop!</h1>
     </header>
   )
 }

@@ -5,7 +5,7 @@ import ProductsSearch from './ProductsSearch';
 import { Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger } from '@/assets/components/ui/dialog';
 import { CartContext } from '@/context/CartContext';
 import Cart from './Cart';
-import { Button } from '@base-ui/react';
+import { Button } from '@/assets/components/ui/button';
 
 function ProductList() {
 const [products, setProducts] = useState([]);
@@ -38,7 +38,7 @@ const [isOpen, setIsOpen] = useState(false);
 const cartItemCount = cart?.length || 0;
 
     return (
-      <>
+   <div className=" bg-gradient-to-r from-blue-700/40 via-slate-600/30 to-blue-700/40 backdrop-blur-xl border border-white/10 shadow-2xl">
 {/* Cart Modal System (Using Dialog) */}
   <Dialog open={isOpen} onOpenChange={setIsOpen}>
   <DialogTrigger asChild>
@@ -101,7 +101,7 @@ const cartItemCount = cart?.length || 0;
         
       
     </div>
-    </>
+    </div>
  );
 }
 export default ProductList;
