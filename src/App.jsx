@@ -11,12 +11,20 @@ function App() {
     <>
     <Router>
       <Navbar/>
+      
+      <Routes>
+      <Route path='/' element={
+        <>
+          <Header/>
+         <ProductList/>
+         <Footer/>
+
+        </>
+      }/>
+
       <Route path='/product/:productId' element={<ProductDetails/>}/>
-    <Header/>
-      <ProductList/>
-    <Footer/>
+      </Routes>
     </Router>
-    
     </>
   )
 }
