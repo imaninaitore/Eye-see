@@ -9,7 +9,9 @@ function App() {
     <>
     <Navbar/>
     <Header/>
-    <ProductList/>
+    <CartProvider>
+      <ProductList/>
+    </CartProvider>
     <Footer/>
     </>
   )
