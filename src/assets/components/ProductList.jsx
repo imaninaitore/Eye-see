@@ -2,7 +2,7 @@ import React from 'react'
 import { useState,useEffect,useContext } from 'react'
 import ProductCard from './ProductCard';
 import ProductsSearch from './ProductsSearch';
-import { Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger } from '@base-ui/react';
+import { Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger } from '@/assets/components/ui/dialog';
 import { CartContext } from '@/context/CartContext';
 import Cart from './Cart';
 
