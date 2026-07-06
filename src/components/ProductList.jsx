@@ -4,11 +4,11 @@ import ProductCard from './ProductCard';
 import ProductsSearch from './ProductsSearch';
 import { Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger } from '@/components/ui/dialog';
 import { CartContext } from '@/context/CartContext';
-import Cart from './Cart';
+import {Cart} from '@/components/cart'
 import { Button } from '@/components/ui/button';
 
 function ProductList() {
-const [products, setProducts] = useState([]);
+const [products, setProducts] = useState([])
   
 const [searchTerm, setSearchTerm]= useState ('')
 
