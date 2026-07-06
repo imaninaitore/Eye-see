@@ -39,11 +39,18 @@ const cartItemCount = cart?.length || 0;
 
     return (
    <div className=" bg-gradient-to-r from-blue-700/40 via-slate-600/30 to-blue-700/40 backdrop-blur-xl border border-white/10 shadow-2xl">
+
+ <div >
+      <h2 className=" text-center text-slate-800 text-3xl sm:text-2xl md:text-5xl lg:text-6xl  py-6 px-6">SHOP</h2>
+
+ <ProductsSearch onSearch = {handleSearch}/>
+    <p>showing results for: <strong>{searchTerm || "All items"}</strong></p>
+
 {/* Cart Modal System (Using Dialog) */}
   <Dialog open={isOpen} onOpenChange={setIsOpen}>
   <DialogTrigger asChild>
     <Button className="relative">
-      Open Cart
+      Cart
 
       {cartItemCount > 0 && (
         <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full px-2 text-xs">
@@ -73,16 +80,12 @@ const cartItemCount = cart?.length || 0;
     </div>
   </DialogContent>
 </Dialog>
-
- <div >
-      <h2 className=" text-center text-slate-800 text-3xl sm:text-2xl md:text-5xl lg:text-6xl  py-6 px-6">SHOP</h2>
- <ProductsSearch onSearch = {handleSearch}/>
-    <p>showing results for: <strong>{searchTerm || "All items"}</strong></p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
        {filteredProducts.length === 0 ? (
         <p>No products match your search </p>
       ):(
+
         filteredProducts.map((product) => (
 
          <ProductCard
