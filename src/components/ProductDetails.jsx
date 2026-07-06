@@ -1,9 +1,8 @@
 import {useParams, Link } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react'; 
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/button';
 import { CartContext } from '@/context/CartContext'; 
 import { ArrowLeft, ShoppingCart } from 'lucide-react';
-
 
 export default function ProductDetails() {
 

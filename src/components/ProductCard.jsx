@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card,CardContent,CardTitle,CardHeader } from './ui/card'
-import { Button } from '@/assets/components/ui/button'
+import { Button } from '@/components/ui/button'
 import { CartContext } from '@/context/CartContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';

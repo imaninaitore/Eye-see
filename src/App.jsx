@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './assets/components/Navbar'
-import Footer from './assets/components/footer'
-import ProductList from './assets/components/ProductList'
-import Header from './assets/components/Header'
+import Navbar from './components/Navbar'
+import Footer from './components/footer'
+import ProductList from './components/ProductList'
+import Header from './components/Header'
 import { BrowserRouter as Router , Routes,Route } from 'react-router-dom'
-import ProductDetails from './assets/components/ProductDetails'
+import ProductDetails from './components/ProductDetails'
 
 function App() {
   return (
