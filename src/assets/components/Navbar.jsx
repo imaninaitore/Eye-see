@@ -11,6 +11,12 @@ function Navbar() {
       </div>
     
      <div>
+     <Link to={'/'}>
+      <a href="#home" className="hover:text-cyan-400 transition duration-300">Home</a>
+     </Link>
+    </div>
+
+     <div>
      <Link to={'/shop'}>
       <a href="#shop" className="hover:text-cyan-400 transition duration-300">Shop</a>
      </Link>
