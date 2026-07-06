@@ -9,26 +9,74 @@
     },
     {
         "id": 2,
-        "name": "pink tint 300",
-        "price": 199.99,
+        "name": "pink tint-sunglasses",
+        "price": 1990,
         "category": "sunglasses",
-        "description": "Experience pure sound with 30-hour battery life.",
+        "description": "slick pink tinted sunglasses with blue-light protection features.",
         "image": "/images/glass 2.jpg" 
     },
     {
         "id": 3,
         "name": "Oval red sunglasses",
-        "price": 25.0,
+        "price": 1250,
         "category": "sunglasses",
-        "description": "Soft, breathable, and sustainably sourced.",
+        "description": "slick sunglasses with blue-light protection features.",
         "image": "/images/glass 3.jpg" 
     },
     {
         "id": 4,
         "name": "black tint sunglasses",
-        "price": 120.0,
-        "category": "rimless",
-        "description": "RGB backlit keys with tactile switches.",
+        "price": 1500,
+        "category": "sunglasses",
+        "description": "slick black tinted sunglasses with blue-light protection features.",
         "image": "/images/glass 4.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "fashion bayonetta-black",
+        "price": 1200,
+        "category": "fashion",
+        "description": "Y2K bayonetta glasses inclusive bluelight protection.",
+        "image": "/images/bayonetta 3.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "bayonetta square",
+        "price": 1170,
+        "category": "designer",
+        "description": "bayonetta classic square shaped glasses.",
+        "image": "/images/bayonetta.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "roundface clear",
+        "price": 1330,
+        "category": "clear rimless",
+        "description": "Roundface clear fashion glasses.",
+        "image": "/images/black bold.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "retro square",
+        "price": 1500,
+        "category": "designer",
+        "description": "retro square unique rimless.",
+        "image": "/images/retro square.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "roundface clear",
+        "price": 2200,
+        "category": "clear",
+        "description": "roundface clear glasses rimless",
+        "image": "/images/roundface.jpg" 
+    },
+    {
+        "id": 4,
+        "name": "safety glasses",
+        "price": 1200,
+        "category": "heavy duty",
+        "description": "safety glasses for welding or heavy light exposure activities.",
+        "image": "/images/safety.jpg" 
     }
 ]
