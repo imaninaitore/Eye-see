@@ -75,7 +75,7 @@ const cartItemCount = cart?.length || 0;
 </Dialog>
 
  <div >
-      <h2>Product List</h2>
+      <h2 className=" text-center text-slate-800 text-3xl sm:text-2xl md:text-5xl lg:text-6xl  py-6 px-6">SHOP</h2>
  <ProductsSearch onSearch = {handleSearch}/>
     <p>showing results for: <strong>{searchTerm || "All items"}</strong></p>
       

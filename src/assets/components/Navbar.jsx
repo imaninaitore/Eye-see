@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Button } from '@/assets/components/ui/button';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -9,12 +10,21 @@ function Navbar() {
         <p className='text-2xl'> Eye<span className='text-blue-400'>see</span></p>
       </div>
     
-    <div>
+     <div>
+     <Link to={'/shop'}>
       <a href="#shop" className="hover:text-cyan-400 transition duration-300">Shop</a>
+     </Link>
     </div>
-    <div>
-      <a href="#contact" className="hover:text-cyan-400 transition duration-300">contact</a>
+   
+   
+   <Link>
+   <div>
+    <Link to={'/footer'}>
+     <a href="#contact" className="hover:text-cyan-400 transition duration-300">contact</a> 
+    </Link>
     </div>
+   </Link>
+    
           <div className="flex items-center gap-3 pl-2 border-l border-muted text-sm font-medium">
             <Button className="bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity">
               Login

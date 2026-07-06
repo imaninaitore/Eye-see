@@ -18,11 +18,18 @@ function App() {
           <Header/>
          <ProductList/>
          <Footer/>
-
         </>
       }/>
+      <Route path='/shop' element={
+        <>
+       <ProductList/> 
+       <Footer/>
+        </>
+       }
+      />
 
       <Route path='/product/:productId' element={<ProductDetails/>}/>
+      <Route path='/footer' element={<Footer/>}/>
       </Routes>
     </Router>
     </>
