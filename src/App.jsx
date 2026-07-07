@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Footer from './pages/Footer'
 import ProductList from './components/ProductList'
 import Header from './components/Header'
 import { BrowserRouter as Router , Routes,Route } from 'react-router-dom'
 import ProductDetails from './components/ProductDetails'
+import { Login } from './pages/login'
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
          <Footer/>
         </>
       }/>
+        <Route path="/login" element={<Login/>}/>
+
       <Route path='/shop' element={
         <>
        <ProductList/> 
