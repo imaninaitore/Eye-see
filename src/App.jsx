@@ -21,7 +21,7 @@ function App() {
          <Footer/>
         </>
       }/>
-        <Route path="/login" element={<Login/>}/>
+      <Route path="/login" element={<Login/>}/>
 
       <Route path='/shop' element={
         <>

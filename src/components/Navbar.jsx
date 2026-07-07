@@ -17,24 +17,27 @@ function Navbar() {
     </div>
 
      <div>
-     <Link to={'/shop'}>
-      <a href="#shop" className="hover:text-cyan-400 transition duration-300">Shop</a>
+     <Link to={'/shop'} className="hover:text-cyan-400 transition duration-300">
+       Shop
      </Link>
     </div>
    
    
    <Link>
    <div>
-    <Link to={'/footer'}>
-     <a href="#contact" className="hover:text-cyan-400 transition duration-300">contact</a> 
+    <Link to={'/footer'} className="hover:text-cyan-400 transition duration-300">
+      contact 
     </Link>
     </div>
    </Link>
     
           <div className="flex items-center gap-3 pl-2 border-l border-muted text-sm font-medium">
-            <Button className="bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity">
+            <Link to={'/login'}>
+             <Button className="bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity">
               Login
             </Button>
+            </Link>
+           
 
             <Button className="bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity">
               sign up 
