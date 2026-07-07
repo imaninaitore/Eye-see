@@ -11,8 +11,8 @@ function Navbar() {
       </div>
     
      <div>
-     <Link to={'/'}>
-      <a href="#home" className="hover:text-cyan-400 transition duration-300">Home</a>
+     <Link to={'/'} className="hover:text-cyan-400 transition duration-300">
+     Home
      </Link>
     </div>
 
@@ -23,13 +23,11 @@ function Navbar() {
     </div>
    
    
-   <Link>
    <div>
     <Link to={'/footer'} className="hover:text-cyan-400 transition duration-300">
       contact 
     </Link>
     </div>
-   </Link>
     
           <div className="flex items-center gap-3 pl-2 border-l border-muted text-sm font-medium">
             <Link to={'/login'}>
