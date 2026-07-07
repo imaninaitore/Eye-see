@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 import ProductsSearch from './ProductsSearch';
 import { Dialog,DialogContent,DialogDescription,DialogHeader,DialogTitle,DialogTrigger } from '@/components/ui/dialog';
 import { CartContext } from '@/context/CartContext';
-import Cart from '@/components/Cart'
+import Cart from './Cart';
 import { Button } from '@/components/ui/button';
 
 function ProductList() {
