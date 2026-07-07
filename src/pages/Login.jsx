@@ -6,6 +6,44 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Eye, EyeOff, Loader2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
+export const Login = () => {
+  const { login } = useAuth();
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setIsSubmitting(true);
+
+    try {
+      // Connect your actual endpoint here:
+      // const res = await fetch('/api/v1/auth/login', { ... })
+      
+      // Simulated API Delay & Response
+      await new Promise((resolve) => setTimeout(resolve, 1200));
+      const fakeToken = "jwt-access-token-example";
+      const fakeUser = { id: "u-secure-1", 
+        email: formData.email, 
+        name: formData.name,
+         role: "admin"};
+
+      login(fakeToken, fakeUser);
+       navigate('/');
+
+    } catch (err) {
+      setError(err.message || 'Invalid email or password. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
 function Login() {
   return (
