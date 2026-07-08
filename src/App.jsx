@@ -6,6 +6,7 @@ import Header from './components/Header'
 import { BrowserRouter as Router , Routes,Route } from 'react-router-dom'
 import ProductDetails from './components/ProductDetails'
 import { Login } from './pages/Login'
+import { Register } from './pages/Regiser'
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
          <ProductList/>
          <Footer/>
         </>
-        
+
       }/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Login/>}/>
 
       <Route path='/shop' element={
         <>
