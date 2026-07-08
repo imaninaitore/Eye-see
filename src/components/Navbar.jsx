@@ -7,7 +7,9 @@ function Navbar() {
 <nav className="sticky top-0 z-50 w-full border-b bg-slate-700/95 backdrop-blur supports-backdrop-filter:bg-slate-700/60 flex justify-between items-center p-4 text-white">
       {/* Clickable Brand Title navigating back home */}
       <div className="text-xl font-bold tracking-tight hover:opacity-90 transition-opacity">
-        <p className='text-2xl'> Eye<span className='text-blue-400'>see</span></p>
+        <Link to={'/'}>
+        <p className='text-2xl'> Eye<span className='text-blue-400'>see</span></p>  
+        </Link>
       </div>
     
      <div>
