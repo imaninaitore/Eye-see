@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Eye, EyeOff, Loader2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
   const { login } = useAuth();
@@ -126,9 +127,9 @@ export const Login = () => {
             
             <p className="text-sm text-center text-muted-foreground w-full">
               Don&apos;t have an account?{' '}
-              <a href="#register" className="font-medium text-primary hover:underline">
+              <Link to="/register" className="font-medium text-primary hover:underline">
                 Sign up
-              </a>
+              </Link>
             </p>
           </CardFooter>
         </form>
