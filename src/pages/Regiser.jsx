@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const Register = () => {
     const { register } = useAuth;
-    const [formData, setFormData] = useState({name:'',email:'',password:'', confirmedPassword:''});
+    const [formData, setFormData] = useState({name:'',email:'',password:'', confirmPassword:''});
     const [error,settError] =useState('');
     const [isSubmitting,setIsSubmitting] = useState(false);
     const [showPassword, setShowPassword] = useState(false)
@@ -14,7 +14,13 @@ export const Register = () => {
         setFormData({...formData, [e.target.name]: e.target.value });
     };
    
-    const handleSubmit 
+    const handleSubmit  = async (e) => {
+        e.preventDefault();
+        setError('');
+    }
+    if (formData.password !== formData.confirmPassword ) {
+        setError('passwords do not match')
+    }
   
     
 }

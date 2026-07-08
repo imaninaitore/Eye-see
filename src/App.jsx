@@ -15,11 +15,13 @@ function App() {
       
       <Routes>
       <Route path='/' element={
+
         <>
           <Header/>
          <ProductList/>
          <Footer/>
         </>
+        
       }/>
       <Route path="/login" element={<Login/>}/>
 
