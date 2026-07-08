@@ -5,7 +5,7 @@ import ProductList from './components/ProductList'
 import Header from './components/Header'
 import { BrowserRouter as Router , Routes,Route } from 'react-router-dom'
 import ProductDetails from './components/ProductDetails'
-import { Login } from './pages/login'
+import { Login } from './pages/Login'
 
 function App() {
   return (

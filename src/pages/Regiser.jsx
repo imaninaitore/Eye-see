@@ -10,11 +10,17 @@ export const Register = () => {
     const [showPassword, setShowPassword] = useState(false)
     const navigate = useNavigate();
 
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value });
+    };
+   
+    const handleSubmit 
+  
     
-  
-  
-    return (
-  )
 }
 
-export default Regiser
+return (
+        <div>
+            <h1>hi !</h1>
+        </div>
+  )
