@@ -39,9 +39,12 @@ function Navbar() {
             </Link>
            
 
-            <Button className="bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity">
+             <Link to={'/register'}>
+             <Button className="bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity">
               sign up 
             </Button>
+             </Link>
+            
           </div>
 </nav>
  
